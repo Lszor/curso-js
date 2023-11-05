@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiro JavaScript</title>
+    <style>
+      body {
+        background-color: rgb(104, 104, 233);
+        color: white;
+        font: normal 20pt Arial;
+      }
+      h1 {
+        color: rgb(248, 49, 115);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+    <p>to livre!!</p>
+    <script>
+      var n1 = Number.parseInt(window.prompt("Digite um número: "));
+    //   var n2 = Number.parseInt(window.prompt('digite outro número: '));
+      var n2 = Number(window.prompt("digite outro número: "));
+      var total = n1 + n2;
+    //   window.alert("o total é: " + total.toString());
+      window.alert(`o total da soma entre ${n1} e ${n2} é igual a: ${total}`);
+    </script>
+  </body>
+</html>
