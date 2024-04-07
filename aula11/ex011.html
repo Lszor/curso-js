@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check-in</title>
+    <style>
+      body {
+        background-color: black;
+        font: normal 18pt arial;
+        color: white;
+      }
+      div#res {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    Qual é seu país <input type="text" name="txtpais" id="txtpais" />
+    <input type="button" value="Confirmar" onclick="verificar()" />
+    <div id="res"></div>
+    <script>
+      function verificar() {
+        var pais = window.document.getElementById("txtpais");
+        var res = window.document.getElementById("res");
+
+        res.innerHTML = `<p>Vivendo em ${pais.value}.</p>`;
+        if (pais.value == "Brasil" || pais.value == "brasil") {
+          res.innerHTML += `<p> Você é Brasileiro!!</p>`;
+        } else {
+          res.innerHTML += `<p> Você é Estrangeiro!! </p>`;
+        }
+      }
+    </script>
+  </body>
+</html>
