@@ -28,6 +28,6 @@ function load() {
       ft1.style.color = '#e9eef9'
       hd1.style.color = '#e9eef9'
       msg.innerHTML += ` <p> <span> <strong>BOA NOITE!!</strong> </span> </p>`
-      //noite
+      // noite
     }
 }
