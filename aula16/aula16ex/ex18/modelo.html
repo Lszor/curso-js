@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Modelo de Exercício</title>
+  <title>Analisador de Números</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
@@ -12,15 +12,26 @@
 </head>
 <body>
   <header>
-    <h1>Titulo</h1>
+    <h1>Analisador de Números</h1>
   </header>
   <section>
     <div>
-      <p>oi</p>
-    </div>
-    <div>
-      <p>oi</p>
-    </div>
+      <p>Número(1 a 100):
+        <input type="number" min="1" max="100" id="txtnum">
+        <input type="button" value="+" onclick="adicionarNumero()">
+      </p>
+      <div>
+        <p>
+          <select name="numlist" id="selnumlist" size="6">
+          </select>
+        </p>
+        <p>
+          <input type="button" value="finalizar" onclick="analisarNumeros()">
+        </p>
+      </div>
+      <div id="res">
+        
+      </div>
   </section>
   <footer>
       <p>&copy; Shab</p>

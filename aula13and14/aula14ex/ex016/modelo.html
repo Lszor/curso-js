@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Contador</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Vamos Contar</h1>
+  </header>
+  <section>
+    <div>
+      <p>Inicio
+        <input type="number" name="inicio" id="txtinicio">
+      </p>
+      <p>Fim
+        <input type="number" name="fim" id="txtfim">
+      </p>
+      <p>Passo
+        <input type="number" min="1" name="passo" id="txtpasso">
+      </p>
+      <p><input type="button" value="Contar" onclick="fazerContagem()"></p>
+
+    </div>
+    <div id="res">
+      preparando contagem...
+    </div>
+  </section>
+  <footer>
+    <p>&copy; Shab</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
